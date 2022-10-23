@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var times = 0;
-/* GET users listing. */
+
+/* mydata page. */
 router.get('/', function(req, res, next) {
-  times+=1;
-  res.send('User accesses are: ' + times);
+  res.render('mydata', { title: 'Uday Kiran Reddy Solupati' });
 });
 
 module.exports = router;
